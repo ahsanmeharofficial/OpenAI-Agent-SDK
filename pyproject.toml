@@ -1,0 +1,20 @@
+[project]
+name = "openai-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "chainlit>=2.7.2",
+    "requests>=2.32.5",
+]
+
+[project.scripts]
+openai-agents = "main:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel>=0.41"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main"]
